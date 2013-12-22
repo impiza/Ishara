@@ -1,0 +1,45 @@
+About:
+
+ISHARA - control mouse using hand gestures.
+
+ISHARA consists of a built-in or USB webcam and a software which is developed
+through this project. The camera is placed on top of the display screen facing
+the user and the user uses two different color-markers on the fingers to
+control the mouse pointer. Yes the user can do all shorts of actions that is
+actually done using a mouse including left-click, right-click, scroll,
+drag-n-drop and such.
+
+It is developed using OpenCV and Qt and written in C++. The initial prototype
+runs on Linux. There is no Mac or Windows version yet.
+
+See LICENSE.txt, there you'll find all the legal stuff.
+
+
+How to compile:
+
+To compile ISHARA you need,
+
+OpenCV (opencv.org)
+Qt Development Libraries
+V4l2 Development Libraries
+XTEST Extension Libraries
+Qmake
+Make
+
+Once you have setup the dependencies, download the source,
+
+$ cd ~/Downloads
+$ git clone https://github.com/saikatbsk/Ishara.git
+
+Move to the directory ishara and run the configure file,
+
+$ cd Ishara
+$ chmod u+x configure
+$ ./configure
+
+Move to the newly created build directory and run make,
+
+$ cd build
+$ make
+
+Live long and may the force be with you ;)
