@@ -198,20 +198,26 @@ ishara::ishara(QWidget *parent) : QMainWindow(parent), ui(new Ui::ishara) {
     /**
      * Setting up check boxes to enable/disable functionalities.
      */
-    if(cfgScroll > 0)
+    if(cfgScroll > 0) {
         ui->chkEnableScroll->setChecked(true);
-    else
+    }
+    else {
         ui->chkEnableScroll->setChecked(false);
+    }
 
-    if(cfgLClick > 0)
+    if(cfgLClick > 0) {
         ui->chkEnableLeftClick->setChecked(true);
-    else
+    }
+    else {
         ui->chkEnableLeftClick->setChecked(false);
+    }
 
-    if(cfgRClick > 0)
+    if(cfgRClick > 0) {
         ui->chkEnableRightClick->setChecked(true);
-    else
+    }
+    else {
         ui->chkEnableRightClick->setChecked(false);
+    }
 
     /**
      * Camera selection in Linux.
@@ -538,8 +544,7 @@ void::ishara::project() {
     mcorFinal_Y = (msPoint_Y) * ratio_h;
 }
 
-void ishara::on_btnStartStop_clicked()
-{
+void ishara::on_btnStartStop_clicked() {
     startStop();
 }
 
@@ -571,161 +576,130 @@ void::ishara::scrollInit(int *x, int *y) {
         ifScrollDwn = 0;
 }
 
-void ishara::on_spnHMin1_valueChanged(int arg1)
-{
+void ishara::on_spnHMin1_valueChanged(int arg1) {
     ui->sliderHMin1->setValue(arg1);
 }
 
-void ishara::on_spnHMax1_valueChanged(int arg1)
-{
+void ishara::on_spnHMax1_valueChanged(int arg1) {
     ui->sliderHMax1->setValue(arg1);
 }
 
-void ishara::on_spnSMin1_valueChanged(int arg1)
-{
+void ishara::on_spnSMin1_valueChanged(int arg1) {
     ui->sliderSMin1->setValue(arg1);
 }
 
-void ishara::on_spnSMax1_valueChanged(int arg1)
-{
+void ishara::on_spnSMax1_valueChanged(int arg1) {
     ui->sliderSMax1->setValue(arg1);
 }
 
-void ishara::on_spnVMin1_valueChanged(int arg1)
-{
+void ishara::on_spnVMin1_valueChanged(int arg1) {
     ui->sliderVMin1->setValue(arg1);
 }
 
-void ishara::on_spnVMax1_valueChanged(int arg1)
-{
+void ishara::on_spnVMax1_valueChanged(int arg1) {
     ui->sliderVMax1->setValue(arg1);
 }
 
-void ishara::on_spnHMin2_valueChanged(int arg1)
-{
+void ishara::on_spnHMin2_valueChanged(int arg1) {
     ui->sliderHMin2->setValue(arg1);
 }
 
-void ishara::on_spnHMax2_valueChanged(int arg1)
-{
+void ishara::on_spnHMax2_valueChanged(int arg1) {
     ui->sliderHMax2->setValue(arg1);
 }
 
-void ishara::on_spnSMin2_valueChanged(int arg1)
-{
+void ishara::on_spnSMin2_valueChanged(int arg1) {
     ui->sliderSMin2->setValue(arg1);
 }
 
-void ishara::on_spnSMax2_valueChanged(int arg1)
-{
+void ishara::on_spnSMax2_valueChanged(int arg1) {
     ui->sliderSMax2->setValue(arg1);
 }
 
-void ishara::on_spnVMin2_valueChanged(int arg1)
-{
+void ishara::on_spnVMin2_valueChanged(int arg1) {
     ui->sliderVMin2->setValue(arg1);
 }
 
-void ishara::on_spnVMax2_valueChanged(int arg1)
-{
+void ishara::on_spnVMax2_valueChanged(int arg1) {
     ui->sliderVMax2->setValue(arg1);
 }
 
-void ishara::on_sliderHMin1_valueChanged(int value)
-{
+void ishara::on_sliderHMin1_valueChanged(int value) {
     ui->spnHMin1->setValue(value);
 }
 
-void ishara::on_sliderHMax1_valueChanged(int value)
-{
+void ishara::on_sliderHMax1_valueChanged(int value) {
     ui->spnHMax1->setValue(value);
 }
 
-void ishara::on_sliderSMin1_valueChanged(int value)
-{
+void ishara::on_sliderSMin1_valueChanged(int value) {
     ui->spnSMin1->setValue(value);
 }
 
-void ishara::on_sliderSMax1_valueChanged(int value)
-{
+void ishara::on_sliderSMax1_valueChanged(int value) {
     ui->spnSMax1->setValue(value);
 }
 
-void ishara::on_sliderVMin1_valueChanged(int value)
-{
+void ishara::on_sliderVMin1_valueChanged(int value) {
     ui->spnVMin1->setValue(value);
 }
 
-void ishara::on_sliderVMax1_valueChanged(int value)
-{
+void ishara::on_sliderVMax1_valueChanged(int value) {
     ui->spnVMax1->setValue(value);
 }
 
-void ishara::on_sliderHMin2_valueChanged(int value)
-{
+void ishara::on_sliderHMin2_valueChanged(int value) {
     ui->spnHMin2->setValue(value);
 }
 
-void ishara::on_sliderHMax2_valueChanged(int value)
-{
+void ishara::on_sliderHMax2_valueChanged(int value) {
     ui->spnHMax2->setValue(value);
 }
 
-void ishara::on_sliderSMin2_valueChanged(int value)
-{
+void ishara::on_sliderSMin2_valueChanged(int value) {
     ui->spnSMin2->setValue(value);
 }
 
-void ishara::on_sliderSMax2_valueChanged(int value)
-{
+void ishara::on_sliderSMax2_valueChanged(int value) {
     ui->spnSMax2->setValue(value);
 }
 
-void ishara::on_sliderVMin2_valueChanged(int value)
-{
+void ishara::on_sliderVMin2_valueChanged(int value) {
     ui->spnVMin2->setValue(value);
 }
 
-void ishara::on_sliderVMax2_valueChanged(int value)
-{
+void ishara::on_sliderVMax2_valueChanged(int value) {
     ui->spnVMax2->setValue(value);
 }
 
-void ishara::on_sliderPinchR_valueChanged(int value)
-{
+void ishara::on_sliderPinchR_valueChanged(int value) {
     ui->spnPinchR->setValue(value);
 }
 
-void ishara::on_spnPinchR_valueChanged(int arg1)
-{
+void ishara::on_spnPinchR_valueChanged(int arg1) {
     ui->sliderPinchR->setValue(arg1);
 }
 
-void ishara::on_sliderRCRC_valueChanged(int value)
-{
+void ishara::on_sliderRCRC_valueChanged(int value) {
     ui->spnRCRC->setValue(value);
 }
 
-void ishara::on_spnRCRC_valueChanged(int arg1)
-{
+void ishara::on_spnRCRC_valueChanged(int arg1) {
     ui->sliderRCRC->setValue(arg1);
 }
 
-void ishara::on_actionQuit_triggered()
-{
+void ishara::on_actionQuit_triggered() {
     QApplication::quit();
 }
 
-int ishara::on_actionAbout_triggered()
-{
+int ishara::on_actionAbout_triggered() {
     AboutDialog about;
     about.show();
 
     return about.exec();
 }
 
-void ishara::on_actionStart_triggered()
-{
+void ishara::on_actionStart_triggered() {
     startStop();
 }
 
@@ -744,7 +718,7 @@ void ishara::startStop() {
 
 void ishara::on_comboSelectCam_currentIndexChanged(int index)
 {
-    if(devSelActive == 0){
+    if(devSelActive == 0) {
         devSelActive = 1;
     }
     else {
@@ -762,17 +736,14 @@ void ishara::camOpen() {
     }
 }
 
-void ishara::on_chkEnableScroll_stateChanged(int arg1)
-{
+void ishara::on_chkEnableScroll_stateChanged(int arg1) {
     cfgScroll = arg1;
 }
 
-void ishara::on_chkEnableLeftClick_stateChanged(int arg1)
-{
+void ishara::on_chkEnableLeftClick_stateChanged(int arg1) {
     cfgLClick = arg1;
 }
 
-void ishara::on_chkEnableRightClick_stateChanged(int arg1)
-{
+void ishara::on_chkEnableRightClick_stateChanged(int arg1) {
     cfgRClick = arg1;
 }
